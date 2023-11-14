@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="account">
+                <div class="account__name">Tài khoản</div>
+                <button class="account__login">Đăng nhập</button>
+                <button class="account__register">Đăng ký</button>
+
+            </div>
+            <div class="addContent">
+                <button>Thêm nội dung gõ</button>
+            </div>
+            <div class="historyGrade">
+                <div class="historyGrade__title">Lịch sử điểm</div>
+                <ul>
+                    <li>1200 Điểm</li>
+                    <li>1400 Điểm</li>
+                    <li>1600 Điểm</li>
+                </ul>
+
+            </div>
+        </aside>
+        <main>
+            <h1>Typing test speed</h1>
+            <div class="chose__level">
+                <div class="chose_level_title">Chose level</div>
+                <form action=""  class="choice__level">
+                    <select name="" id="level">
+                        <option value="business">Dễ</option>
+                        <option value="medium">Vừa</option>
+                        <option value="hard">Khó</option>
+                    </select>
+
+                </form>
+                
+            </div>
+            <div class="show__test">
+                <div class="show__test-content"></div>
+                <div class="show__test-time"></div>
+            </div>
+            <div class="action">
+                <div class="action__keydown">
+                    <input type="text" placeholder="Enter your key" class="action__input">
+                </div>
+                <div class="action__start"><button onclick="start()" >Start</button></div>
+                <div class="action__again"><button onclick="end()">End</button></div>
+            </div>
+            <div class="show_result">
+                <div class="show__result-title">Your grade:
+                <span class="show__result-grade">0</span>
+
+                </div>
+            </div>
+            <div class="overley">
+                
+            </div>
+            <div class="result">
+                <h3>Game over</h3>
+                <div >Điểm của bạn là: <span class="result__grade">1200</span></div>
+                <button class="result__playgain" onclick="playgain()">Chơi lại</button>
+            </div>
+            <div class="login">
+                <h2>Đăng nhập</h2>
+                <div class="form-group">
+                    <p for="">User</p>
+                    <input type="text" class="user">
+                </div>
+                <div class="form-group">
+                    <p for="">Pass</p>
+                    <input type="text" class="pass">   
+                </div>
+                
+                <button class="btn-login">Đăng nhập</button>
+                <h4 class="notification"></h4>
+            </div>
+            <div class="register">
+                <h2>Đăng nhập</h2>
+                <div class="form-group">
+                    <p for="">User</p>
+                    <input type="text" class="register__user">
+                </div>
+                <div class="form-group">
+                    <p for="">Pass</p>
+                    <input type="text" class="register__pass">   
+                </div>
+                <div class="form-group">
+                    <p for="">Enter the Pass</p>
+                    <input type="text" class="pass2">   
+                </div>
+                <button class="btn-register">Đăng ký</button>
+                <h5 class="notification__register"></h5>
+            </div>
+            <div class="keyboard">
+                <div class="keyboard__row1">
+                    <span class="q">Q</span>
+                    <span  class="w">W</span>
+                    <span class="e">E</span>
+                    <span class="r">R</span>
+                    <span class="t">T</span>
+                    <span class="y">Y</span>
+                    <span class="u">U</span>
+                    <span class="i">I</span>
+                    <span class="o">O</span>
+                    <span class="p">P</span>
+                </div>
+                <div class="keyboard__row2">
+                    <span class="a">A</span>
+                    <span class="s">S</span>
+                    <span class="d">D</span>
+                    <span class="f">F</span>
+                    <span class="g">G</span>
+                    <span class="h">H</span>
+                    <span class="j">J</span>
+                    <span class="k">K</span>
+                    <span class="l">L</span>
+                </div>
+                <div class="keyboard__row3">
+                    <span class="z">Z</span>
+                    <span class="x">X</span>
+                    <span class="c">C</span>
+                    <span class="v">V</span>
+                    <span class="b">B</span>
+                    <span class="n">N</span>
+                    <span class="m">M</span>
+
+                </div>
+            </div>
+        
+        </main>
+    </div>
+    <script src="js/showtest2.js"></script>
+    <script type="module" src="main.js"></script>
+    <!-- <script src="./js/showTest.js"></script>
+    <script src="./js/actionkeydown.js"></script> -->
+</body>
+</html>
